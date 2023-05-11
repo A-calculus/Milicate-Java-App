@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signUp">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F5F5F5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="64dp"
+        android:fontFamily="@font/lora"
+        android:text="@string/create_account"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/google_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/google_signup"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="13dp"
+        android:background="@drawable/border"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/inter"
+        android:paddingTop="10dp"
+        android:text="@string/sign_up_with_google"
+        android:textAlignment="center"
+        android:textColor="#525252"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/mail_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_account" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="350dp"
+        android:layout_height="1.5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="-9dp"
+        android:background="?android:attr/listDivider"
+        android:color="#525252"
+        app:layout_constraintBottom_toTopOf="@+id/mail_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/google_signup" />
+
+    <TextView
+        android:id="@+id/mail_signup"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-300dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="81dp"
+        android:background="#F5F5F5"
+        android:fontFamily="@font/inter"
+        android:text="@string/or_sign_up_with_mail"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/signin_email"
+        app:layout_constraintStart_toEndOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/google_signup" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="314dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/e_mail"
+        android:textColor="#645614"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/signin_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signin_email"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="14dp"
+        android:autofillHints=""
+        android:background="@drawable/border"
+        android:fontFamily="@font/lora"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="285dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/password"
+        android:textColor="#645614"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/signin_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin_email" />
+
+    <EditText
+        android:id="@+id/signin_password"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="14dp"
+        android:autofillHints=""
+        android:background="@drawable/border"
+        android:fontFamily="@font/lora"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/military_no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/password_visibility"
+        android:layout_width="36dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="300dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/baseline_visibility_off_24"
+        app:layout_constraintBottom_toTopOf="@+id/no_visibility"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin_email"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <TextView
+        android:id="@+id/military_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="233dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/military_code_no"
+        android:textColor="#645614"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/signup_military_no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin_password" />
+
+    <EditText
+        android:id="@+id/signup_military_no"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="28dp"
+        android:autofillHints=""
+        android:background="@drawable/border"
+        android:fontFamily="@font/lora"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/signup_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/military_no"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/no_visibility"
+        android:layout_width="36dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="55dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/baseline_visibility_off_24"
+        app:layout_constraintBottom_toTopOf="@+id/signup_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin_password"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <Button
+        android:id="@+id/signup_btn"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:background="#645614"
+        android:color="#645614"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="11dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/sign_up_btn"
+        app:layout_constraintBottom_toTopOf="@+id/signup_terms_agreement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_military_no"
+        tools:ignore="VisualLintButtonSize" />
+
+    <TextView
+        android:id="@+id/signup_terms_agreement"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="72dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/by_continuing_you_accept_our_terms_condition_and_our_privacy_policy"
+        android:textAlignment="center"
+        android:textColor="#525252"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_btn"
+        tools:ignore="TextSizeCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>

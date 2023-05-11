@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/ThemeOverlay.Milicate.FullscreenContainer"
+    android:fitsSystemWindows="true"
+    tools:context=".starting_page">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="209dp"
+            android:layout_height="210dp"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="94dp"
+            android:layout_marginEnd="101dp"
+            android:contentDescription="@string/sp_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@mipmap/ic_launcher_foreground" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/continue_btn"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="228dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="52dp"
+        android:background="#645614"
+        android:clickable="true"
+        android:color="#645614"
+        android:focusable="true"
+        android:fontFamily="@font/lora"
+        android:text="@string/Continue"
+        android:textAlignment="center"
+        android:textColor="#f5f5f5"
+        android:textColorHighlight="#F5F5F5"
+        android:textColorLink="#F5F5F5"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in"
+        tools:ignore="MissingConstraints,UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="313dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="312dp"
+        android:fontFamily="@font/lora"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/continue_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

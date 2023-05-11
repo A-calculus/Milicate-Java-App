@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/arrow"
+    tools:context=".landing_page">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="158dp"
+        app:layout_constraintBottom_toTopOf="@+id/loginText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/ic_launcher_foreground"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="158dp"
+        android:fontFamily="@font/inter"
+        android:letterSpacing="0.5"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:ignore="VisualLintOverlap" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="401dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="2dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toTopOf="@+id/loginsub_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/loginText"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/baseline_arrow_forward_24"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/loginsub_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/for_military_personels_only"
+        android:textAlignment="center"
+        android:textColor="#525252"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginText"
+        tools:ignore="VisualLintOverlap" />
+
+
+    <TextView
+        android:id="@+id/reportAProblem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/report_a_problem"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/problem_text"
+        app:layout_constraintEnd_toStartOf="@+id/problem_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginsub_text"
+        tools:ignore="VisualLintOverlap" />
+
+    <ImageView
+        android:id="@+id/problem_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="163dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="149dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/reportAProblem"
+        app:layout_constraintTop_toBottomOf="@+id/loginsub_text"
+        android:src="@drawable/baseline_arrow_forward_24"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/problem_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="132dp"
+        android:fontFamily="@font/inter"
+        android:text="@string/for_civillians_only"
+        android:textAlignment="center"
+        android:textColor="#525252"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reportAProblem"
+        tools:ignore="VisualLintOverlap" />
+
+    <FrameLayout
+        android:id="@+id/login_Layout2"
+        android:layout_width="266dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/border"
+        android:clickable="true"
+        android:contentDescription="@string/login_frame"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@+id/problem_Layout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <FrameLayout
+        android:id="@+id/problem_Layout3"
+        android:layout_width="266dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="125dp"
+        android:background="@drawable/border"
+        android:clickable="true"
+        android:contentDescription="@string/reportaproblem_frame"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginsub_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

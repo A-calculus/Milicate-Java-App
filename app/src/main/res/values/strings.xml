@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Milicate</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="sp_logo">sp_logo</string>
+    <string name="welcome">Welcome</string>
+    <string name="Continue">Continue</string>
+    <string name="title_activity_landing_page">landing_page</string>
+    <string name="arrow">arrow</string>
+    <string name="todo">TODO</string>
+    <string name="login">LOGIN</string>
+    <string name="for_military_personels_only">(for military personels only)</string>
+    <string name="report_a_problem">REPORT A PROBLEM</string>
+    <string name="for_civillians_only">(For Civillians Only)</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="login_frame">login frame</string>
+    <string name="reportaproblem_frame">report a problem frame</string>
+    <string name="log_in">Log in</string>
+    <string name="sign_in">Sign In</string>
+    <string name="e_mail">E-mail:</string>
+    <string name="password">Password:</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="for_military_personel_only">(For military personnel only)</string>
+    <string name="email_visibility">email_visibility</string>
+    <string name="password_visibility">password_visibility</string>
+    <string name="sign_up_with_google">Sign up with Google</string>
+    <string name="create_account">Create Account</string>
+    <string name="or_sign_up_with_mail">or sign up with mail</string>
+    <string name="military_code_no">Military Code No:</string>
+    <string name="sign_up_btn">Sign Up</string>
+    <string name="by_continuing_you_accept_our_terms_condition_and_our_privacy_policy"><![CDATA[By continuing you accept our terms & condition and our privacy policy]]></string>
+    <string name="great">Great!!!</string>
+    <string name="for_easy_association_with_others">For easy association with others</string>
+    <string name="upload_my_photo">Upload my Photo</string>
+    <string name="add_a_photo">Add a Photo</string>
+    <string name="skip">skip</string>
+    <string name="registration_complete">Registration Complete!!!</string>
+    <string name="message">Message</string>
+    <string name="select">Select</string>
+    <string name="check_officers_around_you">Check Officers Around You</string>
+    <string name="submit">Submit</string>
+    <string name="thank_you_for_trusting_us">Thank You for Trusting Us!!!</string>
+    <string name="your_report_will_be_attended_to_shortly">Your Report will be Attended to Shortly</string>
+    <string name="exit">Exit</string>
+    <string name="go_back_to_home">Go back to Home</string>
+    <string name="officers_around_you">Officers Around You</string>
+    <string name="lanre_ayotebi">LANRE AYOTEBI</string>
+    <string name="lieutenant">LIEUTENANT</string>
+    <string name="icons">icons</string>
+    <string name="call">Call</string>
+    <string name="john_favour">JOHN FAVOUR</string>
+    <string name="commander_general">COMMANDER GENERAL</string>
+    <string name="see_reported_problem">See Reported Problem</string>
+    <string-array name="languages">
+        <item />
+        <item>Urgent</item>
+        <item>Not Urgent</item>
+        <item>Can be Attended to Later</item>
+    </string-array>
+</resources>
